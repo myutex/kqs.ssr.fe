@@ -1,0 +1,103 @@
+@import '~open-color/open-color';
+@import '~include-media/dist/_include-media.scss';
+
+section {
+  padding: 70px 0 80px;
+  //height: 500px;
+
+  &:nth-child(even) {
+    background-color: $oc-gray-1;
+  }
+
+  &#medium_to_large {
+    div.wrap {
+      justify-content: space-around;
+    }
+  }
+
+  div.container {
+    h2 {
+      margin-bottom: 50px;
+      font-size: 28px;
+
+      @include media('<desktop') {
+        margin-bottom: 100px;
+      }
+    }
+
+    div.wrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 100px;
+
+      @include media('<desktop') {
+        display: block;
+        width: 100%;
+        padding: 0;
+      }
+
+      > div.card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        //height: 350px;
+        //background-color: $oc-blue-5;
+        //border: 1px solid $oc-gray-5;
+
+        @include media('<desktop') {
+          display: block;
+          width: 100%;
+
+          &:not(:last-child) {
+            margin-bottom: 100px;
+          }
+        }
+
+        > h3 {
+          padding: 20px 0;
+          font-size: 24px;
+          font-weight: 700;
+          color: $oc-gray-8;
+          letter-spacing: 1px;
+          text-align: center;
+        }
+
+        > div.image {
+          flex-basis: 163px;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        > div.text {
+          flex-basis: 120px;
+          padding: 0 30px;
+
+          > h4 {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            color: $oc-gray-8;
+            //text-align: center;
+          }
+
+          > p {
+            font-weight: 400;
+            font-size: 15px;
+            color: $oc-gray-7;
+            line-height: 1.3;
+            letter-spacing: 0.2px;
+            //text-align: center;
+
+            > b {
+              font-weight: 600;
+            }
+
+            &.feature {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import '~open-color/open-color';
+@import '~include-media/dist/include-media';
+
+footer {
+  padding: 50px 0;
+  background-color: rgba($oc-gray-9, 0.9);
+  color: $oc-gray-2;
+
+  div.introduce-services {
+    margin-bottom: 60px;
+    vertical-align: top;
+
+    span {
+      margin-right: 100px;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 5px;
+
+      @include media('<desktop') {
+        display: block;
+        margin: 0 0 50px;
+      }
+    }
+
+    dl {
+      display: inline-block;
+      margin-right: 50px;
+      vertical-align: top;
+
+      @include media('<desktop') {
+        &:nth-child(even) {
+          margin-bottom: 50px;
+        }
+      }
+
+      dt {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $oc-gray-3;
+        letter-spacing: 3px;
+      }
+      dd {
+        margin-bottom: 3px;
+        font-weight: 300;
+        color: $oc-gray-4;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  div.company {
+    font-size: 14px;
+    color: $oc-gray-5;
+
+    address {
+      font-style: normal;
+      line-height: 1.35;
+      letter-spacing: 0.5px;
+
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $oc-gray-4;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
