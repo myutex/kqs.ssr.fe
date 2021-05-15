@@ -96,7 +96,7 @@ function FollowingOffer() {
           카카오톡 주문하기
         </a>
       </div>
-      <div className={styles.appLink}>
+      <div className={styles['app-link']}>
         <a href="https://play.google.com/store/apps/details?id=com.krquick.hmaligo">앱으로 주문하기</a>
       </div>
       <div className={styles.arrow}>
