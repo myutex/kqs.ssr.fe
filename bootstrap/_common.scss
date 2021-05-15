@@ -1,4 +1,5 @@
 @import '~include-media';
+@import '~include-media-export/dist/include-media-export';
 @import '~open-color/open-color';
 
 main {
@@ -18,6 +19,8 @@ div.container {
 }
 
 #app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Gothic A1', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 400;
   font-size: 1rem;
   color: $oc-gray-9;
