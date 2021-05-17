@@ -30,7 +30,7 @@ function Header() {
         setLogo({ ...logo, mode: 'kqs' });
         break;
 
-      case '1661-1987.com':
+      case '1661-1987.co.kr':
         setLogo({ ...logo, mode: 'sqs' });
         break;
 
