@@ -30,11 +30,11 @@ function Footer() {
             <br />
             대표이사 : OOO | 사업자등록번호: OOO-OO-OOOOO
             <br />
-            통신판매번호 : 2021-OOOO-OOOOO
+            {/* 통신판매번호 : 2021-OOOO-OOOOO */}
             <br />
             전화번호 : 1661-7773
             <br />
-            전자우편주소 : id@domain.com
+            {/* 전자우편주소 : id@domain.com */}
           </address>
         </div>
       </div>
