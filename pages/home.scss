@@ -53,6 +53,27 @@ section {
           }
         }
 
+        &.motorcycle div.image {
+          background-image: url('../public/motorcycle.png');
+          background-size: 200px 147px;
+        }
+        &.damas div.image {
+          background-image: url('../public/damas.png');
+          background-size: 200px 148px;
+        }
+        &.labo div.image {
+          background-image: url('../public/labo.jpeg');
+          background-size: 200px 118px;
+        }
+        &.truck-md div.image {
+          background-image: url('../public/truck-md.png');
+          background-size: 200px 88px;
+        }
+        &.truck-lg div.image {
+          background-image: url('../public/truck-lg.png');
+          background-size: 200px 111px;
+        }
+
         > h3 {
           padding: 20px 0;
           font-size: 24px;
@@ -66,6 +87,12 @@ section {
           flex-basis: 163px;
           margin-bottom: 30px;
           text-align: center;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+
+          @include media('<desktop') {
+            min-height: 163px;
+          }
         }
 
         > div.text {
