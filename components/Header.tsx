@@ -35,7 +35,7 @@ function Header() {
         break;
 
       default:
-        logo.mode = 'kqs';
+        setLogo({ ...logo, mode: 'kqs' });
         break;
     }
   }, []);
